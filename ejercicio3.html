@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 Mostrar y ocultar imagen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e3d59;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+            margin: 0%;
+        }
+
+        .boton-cambiar {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        img {
+            width: 400px;
+            display: block;
+            margin: 20px auto; /* Centra la imagen */
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function mostrarOcultarImagen() {
+            const img = document.querySelector("#Imagen");
+            if (img.style.display === "none") {
+                img.style.display = "block";
+            } else {
+                img.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <img id="Imagen" src="images/real_madrid.png" alt="Real Madrid vs Barcelona">
+
+    <br>
+
+    <button class="boton-cambiar" onclick="mostrarOcultarImagen()">Mostrar/Ocultar</button>
+    <br><br>
+    <a href="index.html"><button>Volver al inicio</button></a>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5: Contador de clics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e3d59;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+            margin: 0%;
+        }
+        .boton-cambiar {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        var contador = 0;
+        function contarClicks() {
+            contador++;
+            document.getElementById('contador').innerText = "Has dado clic " + contador + " veces";
+        }
+    </script>
+</head>
+<body>
+    <p id="contador">Has hecho clic 0 veces</p>
+    <button class="boton-cambiar" onclick="contarClicks()">Haz clic</button>
+
+    <br><br>
+    <a href="index.html"><button>Volver al inicio</button></a>
+</body>
+</html>

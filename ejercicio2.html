@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 Cambiar color</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e3d59;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+            margin: 0%;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .boton-cambiar {
+        background-color: #ff6347;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    </style>
+    <script>
+        function cambiarColor() {
+            const notas = document.getElementsByClassName("nota");
+            for (var i = 0; i < notas.length; i++) {
+                notas[i].style.color = "gold"; 
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p class="nota">Este es un ejemplo</p>
+    <p class="nota">Cambiaré de color</p>
+    <p class="nota">Ahora todos cambian</p>
+
+    <br>
+
+    <input type="button" value="Cambiar color" class="boton-cambiar" onclick="cambiarColor()">
+
+    <br><br>
+    <a href="index.html"><button>Volver al inicio</button></a>
+</body>
+</html>
